@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba inicial</title>
+</head>
+<body>
+    <h1>Infiltración a six flags</h1><br/>
+
+    <form action="./dynamics/infiltracion.php" method="post">
+        <fieldset> 
+            <legend>Formulario para llenar los boletos</legend>
+            
+            <label for="nombre">Nombre(s):</label>
+            <input required type="text" name="nombre" id="nombre">
+            <label for="apellidos">Apellidos:</label>
+            <input required type="text" name="apellidos" id="apellidos"><br/><br/>
+            <label for="edad">Edad</label>
+            <input required type="number" name="edad" id="edad" min="1" max="120"><br/><br/>
+            <label for="numeroBoleto">Número de boletos</label>
+            <input required type="number" name="numeroBoleto" id="numeroBOleto" min="1" max="15"><br/><br/>
+            <label for="direction">Dirección</label>
+            <input required type="direction" name="direccion" id="direction"><br/><br/>
+            <label for="cama">Tipo de boletos:</label>
+            <select name="selector" id="select">
+                <option disabled>Selecciona el tipo boletos</option>
+                <option>Clasificación humilde</option>
+                <option>Clasificación normal (sin nada del otro mundo)</option>
+                <option>Clasificación Flash pass</option>
+                <option>Clasificación VIP</option>
+                <option>Solo puedes comprar este desde una mac pro</option>
+            </select><br/><br/>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </fieldset>
+    </form>
+</body>
+</html>
